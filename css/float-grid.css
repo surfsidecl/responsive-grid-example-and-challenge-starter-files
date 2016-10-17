@@ -14,7 +14,7 @@
  *   so 960 + 20 + 20 => 1000px
  *
  **/
-.row {
+.row .row-2 .row-3 .row-4 {
   max-width: 1000px;
   padding-left: 20px;
   padding-right: 20px;
@@ -22,13 +22,13 @@
 }
 
 /* Clearfix */
-.row::before,
-.row::after {
+.row .row-2 .row-3 .row-4::before,
+.row .row-2 .row-3 .row-4::after {
   display: table;
   content: '';
 }
 
-.row::after {
+.row .row-2 .row-3 .row-4::after {
   clear: both;
 }
 
@@ -43,6 +43,8 @@
    */
   padding-left: 1.04166666%;
   padding-right: 1.04166666%;
+   padding-top: 1.04166666%;
+  padding-bottom: 1.04166666%
 }
 
 /* Mobile defaults */
@@ -60,14 +62,17 @@
 
   /* 4 columns */
   .col-4 {
+    width: 33.33%;
   }
 
   /* 6 columns */
   .col-6 {
+    width: 50%;
 
   }
 
   /* 12 columns */
   .col-12 {
+    width: 100%;
   }
 }
